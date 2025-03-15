@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "./plugins/custom-tags.js",
+    "better-docs/typescript"
+  ],
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.(js|ts|jsx|tsx)$"
+  },
+  "opts": {
+    "destination": "./out",
+    "recurse": true,
+    "template": "./node_modules/jsdoc/templates/default"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "includeDate": false,
+      "staticFiles": {
+        "include": [
+          "./templates"
+        ]
+      }
+    }
+  }
+}

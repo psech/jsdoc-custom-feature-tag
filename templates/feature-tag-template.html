@@ -1,0 +1,10 @@
+<?js if (doc.features && doc.features.length) { ?>
+    <dt class="tag-feature">Features:</dt>
+    <dd class="tag-feature">
+        <ul class="dummy">
+            <?js doc.features.forEach(function(feature) { ?>
+                <li><?js= feature ?></li>
+            <?js }); ?>
+        </ul>
+    </dd>
+<?js } ?>
